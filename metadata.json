@@ -1,0 +1,7 @@
+{
+  "name": "Digos Doctors Hospital AI Audio Transcriber",
+  "description": "An AI-powered audio to text transcription application that supports a vast range of languages, including English, major Filipino languages, and various Asian, European, and Middle Eastern languages. Upload your audio file, select the language, and get an accurate transcription in seconds.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

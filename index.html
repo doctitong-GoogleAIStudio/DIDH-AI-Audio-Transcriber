@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Audio Transcriber</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    body {
+        /* Light theme gradient */
+        background: linear-gradient(-45deg, #e5e7eb, #f9fafb, #d1d5db, #e5e7eb);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        transition: background 0.5s ease-in-out;
+    }
+    html.dark body {
+        /* Dark theme gradient */
+        background: linear-gradient(-45deg, #1f2937, #111827, #374151, #1f2937);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
